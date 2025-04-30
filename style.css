@@ -1,0 +1,239 @@
+.header_style {
+    background-image: url(fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed; /* Fija el header en la parte superior */
+    width: 98%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 500; /* Asegura que el header quede encima del contenido */
+    top: 0; /*Esto es para que ocupe todo el superior de la pagina*/
+}
+
+.options_header_style {
+    list-style: none;
+    display: flex;
+}
+
+.body_style {
+    background-color: bisque;
+    padding-top: 100px; /* Asegura que el contenido no quede debajo del header */
+}
+
+.texto_header_style {
+    padding: 15px 25px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;/*el transition es para el cambio de color*/
+}
+/*El hover es una pseudoclase para cambiar el color, tamaño u otra propiedad en este caso le aplico a la clase de los texto*/
+.texto_header_style:hover {
+    color: #ffcc00; 
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+}
+
+/*body{
+font-family: sans-serif;
+text-transform: capitalize;
+}*/
+
+.container{
+max-width: 120px;
+margin: 0 auto;
+
+}
+
+.footer{
+background-color: black;
+padding: 80px 0;
+}
+
+.foote-row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.footer-link{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4{ 
+font-size: 20px; 
+color: azure;
+margin-bottom: 25px;
+font-weight:  500;
+border-bottom:  10px;
+}
+
+.footer-link{
+    font-size: 18px;
+    text-decoration:none;
+    color: antiquewhite;
+    display: block;
+    margin-bottom:  15px;
+    transition: all .3s ease;
+}
+
+.footer-link ul li a:hover{
+    color: azure;
+    padding-left:  6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height:  40px;
+    width:  40px;
+    background-color: black;
+    margin: 0 10px 10px 0;
+    text-align:  center;
+    line-height:  40px;
+    border-radius: 50%;
+    color: azure;
+    transition:all .5s ease
+
+}
+
+.social-link a:hover{
+    background-color: aqua;
+}
+@media(max-width:991px){
+    .foote-row{
+        text-align: center;
+    }
+
+    .footer-link{
+        width: 100%;
+        margin-bottom: 30px;
+    
+    }
+}
+#Precio_oferta {
+    color: red;
+ }
+
+ #producto_oferta{
+    text-align: center;
+ }
+#class-h1{
+    text-align: center;
+    font-size: 64px;
+    font-style: italic;
+    color: blue;
+}
+
+#class-h2{
+    font-size: 44px;
+}
+
+#class-h3{
+    font-size: 29px;
+}
+
+#class-h4{
+    font: size 120px;
+}
+#producto_titulo{
+    text-align: center;
+    font-size: 50px;
+}
+.p_class{
+    font-size: 29px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-image {
+    min-width: 100%;
+    display: none;
+    border: 2px solid #ccc;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .carousel-image.active {
+    display: block;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .carousel-btn.prev {
+    left: 0;
+  }
+  
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  .simple-carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 30px 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 30px;
+  }
+  
+  .carousel-item {
+    min-width: 220px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 35%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .carousel-btn.prev {
+    left: 0;
+  }
+  
+  .carousel-btn.next {
+    right: 0;
+  }
+  

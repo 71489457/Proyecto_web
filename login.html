@@ -9,14 +9,14 @@
 <body class="body_style">
     <h1>Es un gusto tenerte devuelta</h1>
     <br>
-    <form action="file:///C:/Users/LUIS/Documents/Proyecto_web/Proyecto.html" target="_blank" class="form_style">
+    <form action="Proyecto.html" target="_blank" class="form_style" id="login">
         <fieldset>
             <legend><b>Iniciar sesion</b></legend>
         <div><label for="Usuario">Usuario o correo electronico</label> 
-        <input type="text" name="Usuario" id="Usuario" placeholder="Ingrese su usuario" class="input_style"></div>
+        <input type="text" name="Usuario" id="Usuario" placeholder="Ingrese su usuario" class="input_style" required></div>
         <br>
         <label for="Contraseña">Contraseña</label>
-        <input type="password" name="Contraseña" placeholder="ingrese su contraseña" class="input_style">
+        <input type="password" name="Contraseña" placeholder="ingrese su contraseña" class="input_style" id="Contraseña" required>
         <br>
         <br>
         <input type="submit">
@@ -24,7 +24,8 @@
     </form>
 
     <p style="border: 1cm;">¿No estas registrado?</p>
-    <a title="esto es un enlace para registrarse" href="file:///C:/Users/LUIS/Documents/Proyecto_web/register.html">haga clic aqui</a>
+    <a title="esto es un enlace para registrarse" href="register.html">haga clic aqui</a>
+    <script src="loginjava.js"></script>
 
 
 

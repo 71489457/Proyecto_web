@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanKicks.com</title>
+</head>
+<link rel="stylesheet" href="Styles/style.css">
+
+<header>
+    <nav class="header_style">
+        
+        <a href="#inicio">
+            <img src="Imagenes/logo.png" alt="logo" width="80px" height="80px">
+        </a>
+
+        <ul class="options_header_style">
+            <li>
+                <a class="texto_header_style" href="#inicio">Inicio</a>
+            </li>
+            <li>
+                <a class="texto_header_style" href="#productos">Productos</a>
+            </li>
+            <li>
+                <a class="texto_header_style" href="#contacto">Contacto</a>
+            </li>
+        </ul>
+
+        <div class="carrito">
+
+            <a href="Carrito_compras.html">
+                <img src="Imagenes/carrito_compras.png" alt="logo" width="80px" height="80px">
+            </a>
+            
+            <p class="carrito_not"><span id="contador">0</span></p>
+            
+        </div>
+        
+    </nav>
+
+</header>
+
+<body class="body_style">
+    <h1 class="h1_style">URBAN KICKS</h1> 
+        <section>
+            <article class="article_style">
+                <p id="userData"></p><button id="boton_Login"><a href="login.html">Iniciar sesion</a></button>
+                <h2 class="h2_style">¡Oferta Especial!</h2>
+                <h3 class="h3_style">Zapatillas en Descuento</h3>
+                <p class="p_oferta_style">Zapatillas Nike AIR 20% de descuento</p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="carousel">
+                      <img class="carousel-image active" src="Imagenes/nikeairdescuento.webp" alt="Oferta 1">
+                      <img class="carousel-image" src="Imagenes/Nike_oferta_2.webp" alt="Oferta 2">
+                      <img class="carousel-image" src="Imagenes/Nike_oferta_3.webp" alt="Oferta 3">
+                      <img class="carousel-image active" src="Imagenes/Nike_oferta_4.webp" alt="Oferta 4">
+                      <img class="carousel-image" src="Imagenes/Nike_oferta_5.webp" alt="Oferta 5">
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                  </div>
+
+                <p>Precio: <del>s/129.99</del> <b class="b_style">s/99.99</b></p>
+                <button class="btn-carrito" 
+                        data-id="7"
+                        data-nombre="Zapatillas Nike AIR"
+                        data-precio="99.99"
+                        data-imagen="nikeairdescuento.webp">Añadir al carrito
+                </button>    
+            </article>
+            
+
+                <h2 class="h2_titulo">Productos</h2>
+
+            <table>
+                <tr>
+
+                    <td class="td_style">
+                        <div class="div_style_prod">
+                            <p class="p_style">Zapatillas Urbanas</p>
+                            <p>Nike Air Force 1 '07</p>
+                            <img src="Imagenes/nikeair.webp" alt="Zapatillas para hombre" width="200cm" height="200cm" border="1">
+                            <p>Precio: s/499.99</p>
+                            <button class="btn-carrito" 
+                            data-id="1"
+                            data-nombre="Nike Air Force 1 '07"
+                            data-precio="499.99"
+                            data-imagen="Imagenes/nikeair.webp">Añadir al carrito</button>
+                    
+                        </div>
+                    </td>
+
+                    <td class="td_style">
+                        <div class="div_style_prod">
+                            <p class="p_style">Zapatillas Urbanas</p>
+                            <p>Nike Air Force 1 Red&White</p>
+                            <img src="Imagenes/nikerojas.webp" alt="Zapatillas Nike Urbanas" width="200cm" height="200cm" border="1">
+                            <p>Precio: s/699.99</p>
+                            <button class="btn-carrito"
+                            data-id="2"
+                            data-nombre="Nike Air Force 1 Red&White"
+                            data-precio="699.99"
+                            data-imagen="Imagenes/nikerojas.webp">Añadir al carrito</button>
+                    
+                        </div>
+                    </td>
+
+                    <td class="td_style">
+                        <div class="div_style_prod">
+                            <p class="p_style">Zapatillas Runing</p>
+                            <p>Zapatillas Running Nike Air Zoom</p>
+                            <img src="Imagenes/nikerrunning.webp" alt="ZAPATILLAS Nike Running" width="200cm" height="200cm" border="1">
+                            <p>Precio: s/259.00</p>
+                            <button class="btn-carrito" 
+                            data-id="3"
+                            data-nombre="Zapatillas Running Nike Air Zoom"
+                            data-precio="259.99"
+                            data-imagen="Imagenes/nikerrunning.webp">Añadir al carrito</button>
+                    
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="td_style">
+                        <div class="div_style_prod">
+                            <p class="p_style">Zapatillas Nike</P>
+                            <p>Nike Air Max Dn - NIKE</p>
+                            <img src="Imagenes/AIRMAX.png" alt="Nike Air Max Dn" width="200cm" height="200cm" border="1">
+                                <p>Precio: s/450.00</p>
+                                <button class="btn-carrito" 
+                                data-id="4"
+                                data-nombre="Nike Air Max Dn - NIKE"
+                                data-precio="450.00"
+                                data-imagen="Imagenes/AIRMAX.png">Añadir al carrito</button>
+                        </div>
+                    </td>
+
+                    <td class="td_style">
+                        <div class="div_style_prod">
+                            <p class="p_style">Zapatillas Urbanas</p>
+                            <p>Zapatillas Nike Hombre Urbanas SB</p>
+                            <img src="Imagenes/Nike_bajas.webp" alt="Zapatillas Nike Hombre Urbanas SB" width="200cm" height="200cm" border="1">
+                            <p>Precio: s/199.99</p>
+                            <button class="btn-carrito"
+                                data-id="5"
+                                data-nombre="Zapatillas Nike Hombre Urbanas SB"
+                                data-precio="199.00"
+                                data-imagen="Imagenes/Nike_bajas.webp">Añadir al carrito</button>
+                            
+                        </div>
+                    </td>
+
+                    <td class="td_style">
+                        <div class="div_style_prod">
+                            <p class="p_style">Zapatillas de vestir</p>
+                            <p>Air Jordan 1 Low</p>
+                            <img src="Imagenes/Nike_vestir.webp" alt="Air Jordan 1 Low" width="200cm" height="200cm" border="1">
+                                <p>Precio: s/579.90</p>
+                                <button class="btn-carrito"
+                                data-id="6"
+                                data-nombre="Air Jordan 1 Low"
+                                data-precio="579.90"
+                                data-imagen="Imagenes/Nike_vestir.webp">Añadir al carrito</button>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+        </section>
+    
+    <br><br>
+
+
+    <footer class="footer_general">
+    <div class="footer_compañia">
+        <h4>Compañía</h4>
+        <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Nuestros Servicios</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+    </div>
+
+    <div class="footer_ayuda">
+        <h4>Ayuda</h4>
+        <ul>
+            <li><a href="#">Atención al Cliente</a></li>
+            <li><a href="#">Whatsapp: +51 946247612</a></li>
+            <li><a href="#">Correo: Urbankicks@gmail.com</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Métodos de Pago</a></li>
+        </ul>
+    </div>
+
+    <div class="footer_redes">
+        <h4>Síguenos</h4>
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h4>&copy; 2025 UrbanKicks.com</h4>
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer>
+   <script src="Proyecto_Javascript.js"></script>
+    <script src="java.js"></script>
+    <script src="principal.js"></script>
+</body>
+</html>

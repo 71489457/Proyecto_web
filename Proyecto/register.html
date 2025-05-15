@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrar</title>
+
+</head>
+<link rel="stylesheet" href="Styles/register_style.css">
+<body>
+   <h1>Bienvenido a tu primer paso para Urban Kicks</h1>
+   
+   <form action="Proyecto.html" target="_blank" class="form_style" id="formularioRegister">
+    <fieldset>
+        <legend><b>Registrar</b></legend>
+        
+        <div> <label for="nombres_user">Nombres</label>
+            <input type= "text" name="nombres_user" id="nombres_user" placeholder="Ingrese sus nombres" class="input_style" required></div>
+             <br>
+        <div> <label for="apellidos_user">Apellidos</label>
+            <input type= "text" name="apellidos_user" id="apellidos" placeholder="Ingrese sus apellidos" class="input_style"></div>
+            <br>
+        
+            <div><label for="Tipo_documento">Documento de identidad</label>
+                <select name="Tipo_documento" id="Tipo_documento">
+                    <option value="">por favor elija una opcion</option>
+                    <option value="DNI">DNI</option>
+                    <option value="Pasaporte">Pasaporte</option></select><input type="text" name="DNI" id="DNI" placeholder="Ingrese su DNI o Pasaporte">
+                </select></div>
+                
+                <br>
+                <div> <label for="email">Email</label>
+        <input type= "email" name="email" id="email" placeholder="Ingrese su email" class="input_style"></div>
+        <br>
+        <div><label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Ingresa una contraseña" class="input_style" required></div>
+        <br>
+        <div><label for="Repit_password">Volver a poner la contraseña</label>
+        <input type="password" name="Repit_password" id="Repit_passowrd" placeholder="Volver a poner la contraseña" class="input_style"></div>
+        <br>
+            <input type="submit" value="Registrar">
+
+                
+    </fieldset>
+    </form>
+    <script src="registerjava.js"></script>
+</body>
+</html>  

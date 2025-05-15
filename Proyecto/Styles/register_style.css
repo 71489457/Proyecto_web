@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.form_style {
+    background-color: bisque;
+}
+
+.input_style:focus {
+    background-color: yellow;
+
+}

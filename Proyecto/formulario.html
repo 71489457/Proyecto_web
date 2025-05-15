@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pago</title>
+    <link rel="stylesheet" href="Styles/formulario.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Tarjeta de crédito o débito</h2>
+        <form action="procesar_pago.php" method="post">
+            <div class="form-group">
+                <label for="num_tar">Numero de tarjeta</label>
+                <input type="text" id="num_tar" name="num_tar" placeholder="4444 4444 4444 4444"
+                maxlength="19" required>                
+            </div>
+
+            <div class="form-group">
+                <label for="fecha_ven">Fecha de vencimiento</label>
+                <input type="month" id="fecha_ven" name="fecha_ven" required>       
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">Codigo de seguridad</label>
+                <input type="text" id="cvv" name="cvv" placeholder="444" maxlength="3" required>                
+            </div>
+
+            <div class="form-group">
+                <label for="titular">Nombre del titular</label>
+                <input type="text" id="titular" name="titular" placeholder="Ingresar nombre del titular"
+                    required>                
+            </div>
+
+            <div class="form-group">
+                <label for="dni">Documento del titular</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingresar su DNI" class="input_style" maxlength="8">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" oninput="validateEmailInput()" placeholder="micorrreo@correo.com" required>
+                <span id="emailFeedback" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Realizar pago">
+            </div>
+        </form>
+    </div>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

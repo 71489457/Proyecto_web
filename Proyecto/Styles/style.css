@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    }
+
+h2 {
+    font-style: initial;
+    color: red;
+}
+
+
+/*ESTILOS DEL HEADER*/
+.header_style {
+    background-image: url(../Imagenes/Fondo_alterno.avif);
+    background-repeat: no-repeat;
+    background-size: 1500px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed; /* Fija el header en la parte superior */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 500; /* Asegura que el header quede encima del contenido */
+    top: 0; /*Esto es para que ocupe todo el superior de la pagina*/
+}
+
+.carrito {
+    position: relative;
+    text-align: center;
+}
+
+.carrito_not {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    /*display: none;*/  
+}
+
+.options_header_style {
+    list-style: none;
+    display: flex;
+}
+
+.texto_header_style {
+    padding: 15px 25px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;/*el transition es para el cambio de color*/
+}
+/*El hover es una pseudoclase para cambiar el color, tamaño u otra propiedad en este caso le aplico a la clase de los texto*/
+.texto_header_style:hover {
+    color: #ffcc00; 
+}
+
+/*ESTILOS DEL BODY*/
+
+.body_style {
+    /*background-color: rgba(226, 216, 216, 0.651);*/
+    background-image: url(../Imagenes/Fondo_pagina.jpg);
+    background-size: 1500px 1000px;
+    padding-top: 100px; /* Asegura que el contenido no quede debajo del header */
+}
+
+.h1_style {
+    text-align: center;
+    font-size: 64px;
+    font-style: italic;
+    color: blue;
+}
+
+.article_style {
+    text-align: center;
+}
+
+.h2_style {
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+.h3_style {
+    font-size: 29px;
+}
+
+.p_oferta_style {
+    font-size: 29px;
+}
+
+.b_style {
+    color: red;
+}
+
+.h2_titulo {
+    text-align: center;
+    font-size: 50px;
+}
+
+.td_style{
+    padding-right: 100px; 
+    padding-left: 100px;
+}
+
+.div_style_prod{
+    display: inline-block; 
+    text-align: center; 
+    margin: 20px;
+}
+
+.p_style{
+    font-size: 29px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+  
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.carousel-image {
+    min-width: 100%;
+    display: none;
+    border: 2px solid #ccc;
+    height: 400px;
+    object-fit: cover;
+}
+  
+.carousel-image.active {
+    display: block;
+}
+  
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+  
+.carousel-btn.prev {
+    left: 0;
+}
+  
+.carousel-btn.next {
+    right: 0;
+}
+
+
+
+.btn-carrito {
+    background-color: #38e060;       
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+
+.btn-carrito:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.titulo_carrito {
+    font-size: 70px;
+    color: #218838;
+    font-weight: bold;
+}
+
+.texto_carrito {
+    font-size: 25px;
+    color: red;
+}
+
+#botonComprarContenedor {
+    text-align:center; 
+    margin-top:20px; 
+    display: none;
+}
+
+#btnComprar {
+    background-color: #38e060;       
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+
+#btnComprar:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/*ESTILOS DEL FOOTER*/
+.footer_general {
+    background-color: #333; 
+    color: white; 
+    padding: 40px 20px; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+
+.footer_general h4 {
+    font-size: 18px; /* Título de cada sección */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer_general ul li a {
+    color:rgb(47, 47, 134); 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: color 0.3s; 
+}
+
+.footer_general ul li a:hover {
+    color: #fff; 
+}
+#userData {
+    text-align: right;
+    font-size: 20px;
+    color: #fa0808;
+}
+#userData2 {
+    text-align: right;
+    font-size: 20px;
+    color: #fd0b0b;
+
+}
+#boton_Login {
+    text-align: left;
+}

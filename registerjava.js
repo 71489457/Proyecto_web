@@ -1,15 +1,19 @@
 document.getElementById('formularioRegister').addEventListener('submit',
     function(eventos) { eventos.preventDefault();
 
-        var usuario = document.getElementById('nombres_user').value;
-        var contraseña = document.getElementById('password').value;
+        const usuario = document.getElementById('usuario').value;
+        const contraseña = document.getElementById('contraseña').value;
 
         if (usuario && contraseña) {
             
-            sessionStorage.setItem('nombres_user', usuario);
-            sessionStorage.setItem('password', contraseña)
+            sessionStorage.setItem('usuario', usuario);
+            sessionStorage.setItem('contraseña', contraseña)
 
             window.location.href= "Proyecto.html";
         } else {
             alert('tiene que completar los campos')
-}})
+        }
+
+        
+    }
+)

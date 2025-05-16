@@ -1,5 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 20px;
-    background-color: rgb(214, 221, 223);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.card-logos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.card-logos img {
+    height: 30px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="month"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="month"]:focus,
+input[type="email"]:focus {
+    border-color: #4d90fe;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(77, 144, 254, 0.2);
+}
+
+.card-row {
+    display: flex;
+    gap: 15px;
+}
+
+.card-row .form-group {
+    flex: 1;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #1e5799 0%, #1e70c0 50%, #1a6cb5 100%);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.success-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-message-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.success-check {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-check svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+
+.success-message h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.success-message button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.success-message button:hover {
+    background-color: #3d9140;
+}
+
+.error {
+    border-color: #ff3b30 !important;
+}
+
+.error-message {
+    color: #ff3b30;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .card-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Estilos para el mensaje de procesamiento */
+.processing-content {
+    background-color: white;
+}
+
+.loading-spinner {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilos para el botón de pago con icono */
+.payment-button {
+    width: 100%;
+    background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.payment-button:hover {
+    background: linear-gradient(135deg, #1e5799 0%, #1e70c0 50%, #1a6cb5 100%);
+}
+
+.payment-button:active {
+    transform: scale(0.98);
+}
+
+.payment-button span {
+    margin-right: 10px;
+}
+
+.payment-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .payment-icon {
+        width: 18px;
+        height: 18px;
+    }
 }

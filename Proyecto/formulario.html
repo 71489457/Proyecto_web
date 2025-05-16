@@ -11,21 +11,24 @@
 <body>
     <div class="form-container">
         <h2>Tarjeta de crédito o débito</h2>
+        <!-- Logos de tarjetas se añadirán por JS -->
         <form action="procesar_pago.php" method="post">
             <div class="form-group">
-                <label for="num_tar">Numero de tarjeta</label>
+                <label for="num_tar">Número de tarjeta</label>
                 <input type="text" id="num_tar" name="num_tar" placeholder="4444 4444 4444 4444"
                 maxlength="19" required>                
             </div>
 
-            <div class="form-group">
-                <label for="fecha_ven">Fecha de vencimiento</label>
-                <input type="month" id="fecha_ven" name="fecha_ven" required>       
-            </div>
+            <div class="card-row">
+                <div class="form-group">
+                    <label for="fecha_ven">Fecha de vencimiento</label>
+                    <input type="month" id="fecha_ven" name="fecha_ven" required>       
+                </div>
 
-            <div class="form-group">
-                <label for="cvv">Codigo de seguridad</label>
-                <input type="text" id="cvv" name="cvv" placeholder="444" maxlength="3" required>                
+                <div class="form-group">
+                    <label for="cvv">Código de seguridad</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="444" maxlength="3" required>                
+                </div>
             </div>
 
             <div class="form-group">
@@ -36,19 +39,28 @@
 
             <div class="form-group">
                 <label for="dni">Documento del titular</label>
-                <input type="text" id="dni" name="dni" placeholder="Ingresar su DNI" class="input_style" maxlength="8">
+                <input type="text" id="dni" name="dni" placeholder="Ingresar su DNI" class="input_style" maxlength="8" required>
             </div>
-            <div>
+            
+            <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" oninput="validateEmailInput()" placeholder="micorrreo@correo.com" required>
+                <input type="email" name="email" id="email" placeholder="micorreo@correo.com" required>
                 <span id="emailFeedback" style="color: red;"></span>
             </div>
+            
             <div class="form-group">
-                <input type="submit" value="Realizar pago">
+                <button type="submit" class="payment-button">
+                    <span>Realizar pago</span>
+                    <svg class="payment-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path fill="currentColor" d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                    </svg>
+                </button>
             </div>
         </form>
     </div>
-    <script src="js/formulario.js"></script>
+    
+    <script src="formulario.js"></script>
 </body>
 
 </html>

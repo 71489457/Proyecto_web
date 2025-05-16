@@ -271,8 +271,8 @@ document.addEventListener('DOMContentLoaded', function() {
             //Agregar un pequeño retraso de redireccionar 
             setTimeout(() => {
                 successDiv.remove();
-                //Redireccionar a Proyecto.html
-                window.location.href = "Proyecto.html";
+                //Redireccionar a index
+                window.location.href = "/";
             }, 300);
         });
     }

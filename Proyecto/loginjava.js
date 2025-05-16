@@ -11,7 +11,7 @@ document.getElementById('login').addEventListener('submit',
             sessionStorage.setItem('Usuario', usuarioIngresado);
             sessionStorage.setItem('Contraseña', contraseñaIngresada);
 
-            window.location.href = "/";
+            window.location.href = "/index.html";
         } else {
             alert("completa los campos");
         }
